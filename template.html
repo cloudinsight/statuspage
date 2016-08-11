@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="milligram.min.css">
 		<link rel="stylesheet" href="style.css">
 		{# upload your own favicon.png to the root of your repo and replace with href="favicon.png" #}
-		<link rel="icon" href="https://raw.githubusercontent.com/pyupio/statuspage/master/template/favicon.png">
+    <link rel="icon" href="favicon.png">
 	</head>
 	<body>
 
@@ -20,7 +20,7 @@
 
 					<a class="navigation-title" href="">
 						{# upload your own logo.png to the root of your repo and replace with src="logo.png" #}
-						<img class="img" src="https://raw.githubusercontent.com/pyupio/statuspage/master/template/logo.png" height="30">
+						<img class="img" src="favicon.png" height="30">
 						<h1 class="title">Status</h1>
 					</a>
 
@@ -55,7 +55,7 @@
 				{% if incidents %}
 					{% for incident in incidents %}
 					<div class="incident">
-						<span class="date">{{ incident.created }} UTC+8</span>
+						<span class="date">{{ incident.created }}  UTC+8</span>
 
 						{% if incident.closed %}
 							<span class="label operational float-right">解决</span>
