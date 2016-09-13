@@ -52,9 +52,11 @@
 
 			<section class="container" id="main">
 				
-					<div class="panel operational">
-						所有系统运行正常
+					
+					<div class="panel degraded performance">
+            性能降低 on 数据收集.
 					</div>
+					
 				
 
 				<h4>Systems</h4>
@@ -85,14 +87,30 @@
 					</li>
 					
 					<li>
-						数据收集 <span class="status operational">运行正常</span>
+						数据收集 <span class="status degraded performance">性能降低</span>
 					</li>
 					
 				</ul>
 
 				<h4>Incidents</h4>
 				
-					<em>No incidents in the past 90 days.</em>
+					
+					<div class="incident">
+						<span class="date">2016-09-13 17:23:26 UTC+8</span>
+
+						
+							<span class="label degraded performance float-right">性能降低</span>
+						
+						
+							<span class="label system float-right">数据收集</span>
+						
+						<hr/>
+
+						<span class="title">数据量异常增长，数据处理队列积压比较严重</span>
+						<p></p>
+						
+					</div>
+					
 				
 
         <p style="font-size:12px;text-align:right;">Status page hosted by GitHub, generated with <a href="https://github.com/pyupio/statuspage">pyupio/statuspage</a></p>
